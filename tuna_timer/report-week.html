@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>status edit</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header_container">
+			<div class="header__col header__col-left">
+				<div class="header__logo col-3">
+					<img src="img/TunaTimer.png" alt="">
+				</div>
+				<nav class="header__nav col-3">
+					<ul>
+						<li><a href="index.html">Status</a></li>
+						<li class="header__nav-active"><a href="#">Report</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__col header__col-right">
+				<div class="header__task">
+					<button class="header__task_btn">ADD NEW TASK</button>
+				</div>
+				<div class="header__hour">
+				<p>Your total for today</p>
+				<h5>8:30 <span>h</span></h5>
+			</div>
+				<div class="header__user">
+					<form action="">
+						<select>
+							<option>@ Sergey_Sokolenko</option>
+							<option>@ Artem_Zhuravlev</option>
+							<option>@ Ivan_Ivanov</option>
+						</select>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="main-tabs">
+			<div class="container">
+				<nav class="main-tabs__nav">
+					<ul>
+						<li class="main-tabs__nav-active"><a href="#">week</a></li>
+						<li><a href="report-month.html">month</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="main-date main-date__select">
+			<div class="container">
+				<div class="main-date__holder">
+					<div class="main-date__left">
+						<a href="#"></a>
+					</div>
+					<div class="main-date__form">
+						<form action="">
+							<select>
+								<option>October 2016</option>
+								<option>September 2016</option>
+								<option>August 2016</option>
+								<option>July 2016</option>
+								<option>June 2016</option>
+								<option>May 2016</option>
+								<option>April 2016</option>
+								<option>March 2016</option>
+								<option>February 2016</option>
+								<option>January 2016</option>
+							</select>
+						</form>
+					</div>
+					<div class="main-date__right">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="report-month">
+			<div class="week-container">
+				<div class="report-copy">
+					<ul>
+						<li><a href="table.html"><i class="fa fa-print" aria-hidden="true"></i> Print report</a></li>
+						<li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i> Export report</a></li>
+					</ul>
+				</div>
+				<form action="">
+					<table class="report-month__tabe report-month__tabe-week">
+						<tr class="report-month__tabe-title">
+							<td><input type="checkbox" name="check"></td>
+							<td class="report-month__tabe-name"><h5>PROJECT</h5></td>
+							<td><h5>10</h5><h6>M</h6></td>
+							<td><h5>11</h5><h6>T</h6></td>
+							<td><h5>12</h5><h6>W</h6></td>
+							<td><h5>13</h5><h6>F</h6></td>
+							<td><h5>14</h5><h6>F</h6></td>
+							<td><h5>15</h5><h6>S</h6></td>
+							<td><h5>16</h5><h6>S</h6></td>
+							<td><h5>TIME</h5></td>
+						</tr>
+						<tr class="report-month__tabe-time">
+							<td><input type="checkbox" name="check"></td>
+							<td class="report-month__tabe-name"><h5>Tuna timer</h5></td>
+							<td></td>
+							<td></td>
+							<td>8:00</td>
+							<td></td>
+							<td></td>
+							<td class="report-month__table-weekend"></td>
+							<td class="report-month__table-weekend last"></td>
+							<td>19:00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check"></td>
+							<td class="report-month__tabe-name"><h5>android_demo_release</h5></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>6:30</td>
+							<td>4:00</td>
+							<td class="report-month__table-weekend"></td>
+							<td class="report-month__table-weekend last"></td>
+							<td>33:00</td>
+						</tr>
+						<tr class="report-month__result">
+							<td colspan="2" class="report-month__all"><h5>Daily hours total:</h5></td>
+							</h5></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>6:30</td>
+							<td>4:00</td>
+							<td class="report-month__table-weekend"></td>
+							<td class="report-month__table-weekend last"></td>
+							<td>33:00</td>
+						</tr>
+						<tr class="report-month__result-all report-month__result-week">
+							<td colspan="34" rowspan="2" class="report-month__all"><h3>Monthly hours Total: <span>52:00 h</span></h3></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<h6>(c) CleverUA</h6>
+		</div>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script>
+		(function($) {
+			$(function() {
+  				$('input, select').styler();
+			});
+		})(jQuery);
+		$(function(){
+            $('.main-task__btn-active').click(function(){
+                $('.main-task__btn-active').toggleClass('main-task__btn-pause');
+            });
+        });
+	</script>
+</body>
+</html>

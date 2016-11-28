@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>status edit</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header_container">
+			<div class="header__col header__col-left">
+				<div class="header__logo col-3">
+					<img src="img/TunaTimer.png" alt="">
+				</div>
+				<nav class="header__nav col-3">
+					<ul>
+						<li class="header__nav-active"><a href="#">Status</a></li>
+						<li><a href="report-month.html">Report</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__col header__col-right">
+				<div class="header__task">
+					<button class="header__task_btn">ADD NEW TASK</button>
+				</div>
+				<div class="header__hour">
+				<p>Your total for today</p>
+				<h5>8:30 <span>h</span></h5>
+			</div>
+				<div class="header__user">
+					<form>
+						<select>
+							<option>@ Sergey_Sokolenko</option>
+							<option>@ Artem_Zhuravlev</option>
+							<option>@ Ivan_Ivanov</option>
+						</select>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="main-tabs">
+			<div class="container">
+				<nav class="main-tabs__nav">
+					<ul>
+						<li><a href="status-prev.html">previous working day</a></li>
+						<li class="main-tabs__nav-active"><a href="#">TODAY</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="main-date">
+			<div class="container">
+				<h6>Monday October 19</h6>
+			</div>
+		</div>
+		<div class="main-task">
+			<div class="container">
+				<div class="main-task__name">
+					<div class="main-task__name-item col-6">
+						<p>NAME</p>
+					</div>
+					<div class="main-task__name-item col-2-1">
+						<p>PROJECT</p>
+					</div>
+					<div class="main-task__name-item col-2-1">
+						<p>TIME</p>
+					</div>
+				</div>
+				<div class="main-task__item main-task__item-active" tabindex="0">
+					<form>
+						<div class="main-task__item-title">
+							<textarea name="text"  data="rezine"></textarea>
+						</div>
+						<div class="main-task__item-select">
+							<select>
+								<option>tuna-timer copy</option>
+								<option>android_demo_release</option>
+								<option>builds copy</option>
+								<option>applesrss copy</option>
+								<option>files</option>
+							</select>
+						</div>
+						<div class="main-task__btn-active"></div>
+						<div class="main-task__item-hour">
+							<textarea name="hour"></textarea>
+						</div>
+					</form>
+					<button class="main-task__close"></button>
+				</div>
+				<div class="main-task__item" tabindex="0">
+					<form>
+						<div class="main-task__item-title">
+							<h4>DDP-513 Associated Push - prototype for delayed ARes to be issued up on a RabbitMQ message receiving.</h4>
+						</div>
+						<div class="main-task__item-select">
+							<select>
+								<option>tuna-timer copy</option>
+								<option>android_demo_release</option>
+								<option>builds copy</option>
+								<option>applesrss copy</option>
+								<option>files</option>
+							</select>
+						</div>
+						<div class="main-task__btn"></div>
+						<div class="main-task__item-hour">
+							<h3>1:50 h</h3>
+						</div>
+					</form>
+				</div>
+				<div class="main-task__item" tabindex="0">
+					<form>
+						<div class="main-task__item-title">
+							<h4>Upgrade the project to rails 5.0</h4>
+						</div>
+						<div class="main-task__item-select">
+							<select>
+								<option>tuna-timer copy</option>
+								<option>android_demo_release</option>
+								<option>builds copy</option>
+								<option>applesrss copy</option>
+								<option>files</option>
+							</select>
+						</div>
+						<div class="main-task__btn"></div>
+						<div class="main-task__item-hour">
+							<h3>1:50 h</h3>
+						</div>
+					</form>
+				</div>
+				<div class="main-task__item" tabindex="0">
+					<form>
+						<div class="main-task__item-title">
+							<h4>Push - prototype for delayed ARes</h4>
+						</div>
+						<div class="main-task__item-select">
+							<select>
+								<option>tuna-timer copy</option>
+								<option>android_demo_release</option>
+								<option>builds copy</option>
+								<option>applesrss copy</option>
+								<option>files</option>
+							</select>
+						</div>
+						<div class="main-task__btn"></div>
+						<div class="main-task__item-hour">
+							<h3>1:50 h</h3>
+						</div>
+					</form>
+				</div>
+				<div class="main-task__item" tabindex="0">
+					<form>
+						<div class="main-task__item-title">
+							<h4>Upgrade the project to rails 5.0</h4>
+						</div>
+						<div class="main-task__item-select">
+							<select>
+								<option>tuna-timer copy</option>
+								<option>android_demo_release</option>
+								<option>builds copy</option>
+								<option>applesrss copy</option>
+								<option>files</option>
+							</select>
+						</div>
+						<div class="main-task__btn"></div>
+						<div class="main-task__item-hour">
+							<h3>1:50 h</h3>
+						</div>
+					</form>
+				</div>
+				<div class="main-task__item" tabindex="0">
+					<form>
+						<div class="main-task__item-title">
+							<h4>Service items of the wizard elements should be set to the submission json after submission created</h4>
+						</div>
+						<div class="main-task__item-select">
+							<select>
+								<option>tuna-timer copy</option>
+								<option>android_demo_release</option>
+								<option>builds copy</option>
+								<option>applesrss copy</option>
+								<option>files</option>
+							</select>
+						</div>
+						<div class="main-task__btn"></div>
+						<div class="main-task__item-hour">
+							<h3>1:50 h</h3>
+						</div>
+					</form>
+				</div>
+				<div class="main-task__item" tabindex="0">
+					<form>
+						<div class="main-task__item-title">
+							<h4>Deciders table: county/city logo must be changes after pressing GO button</h4>
+						</div>
+						<div class="main-task__item-select">
+							<select>
+								<option>tuna-timer copy</option>
+								<option>android_demo_release</option>
+								<option>builds copy</option>
+								<option>applesrss copy</option>
+								<option>files</option>
+							</select>
+						</div>
+						<div class="main-task__btn"></div>
+						<div class="main-task__item-hour">
+							<h3>1:50 h</h3>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<h6>(c) CleverUA</h6>
+		</div>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/rezine.js"></script>
+	<script>
+		(function($) {
+			$(function() {
+  				$('input, select').styler();
+			});
+		})(jQuery);
+		$(function(){
+            $('.main-task__btn-active').click(function(){
+                $('.main-task__btn-active').toggleClass('main-task__btn-pause');
+            });
+        });
+	</script>
+</body>
+</html>
