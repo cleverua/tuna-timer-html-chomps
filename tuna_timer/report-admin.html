@@ -31,13 +31,9 @@
 				</nav>
 			</div>
 			<div class="header__col header__col-right">
-				<div class="header__task">
-					<button class="header__task_btn">ADD NEW TASK</button>
+				<div class="header__admin">
+					<h2>Admin</h2>
 				</div>
-				<div class="header__hour">
-				<p>Your total for today</p>
-				<h5>8:30 <span>h</span></h5>
-			</div>
 				<div class="header__user">
 					<form>
 						<select>
@@ -91,12 +87,19 @@
 		</div>
 		<div class="report-month">
 			<div class="report-container">
+				<div class="report-user">
+					<ul>
+						<li><button class="report-user__btn-active">tuna_ui/ux</button></li>
+						<li><button class="report-user__btn">tuna_dev</button></li>
+					</ul>
+				</div>
 				<div class="report-copy">
 					<ul>
 						<li><a href="table.html"><i class="fa fa-print" aria-hidden="true"></i> Print report</a></li>
 						<li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i> Export report</a></li>
 					</ul>
 				</div>
+
 				<form>
 					<table class="report-month__tabe">
 						<tr class="report-month__tabe-title">
@@ -177,31 +180,31 @@
 							<td class="report-month__table-weekend"></td>
 							<td class="report-month__table-weekend last"></td>
 							<td></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">4:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:00</button></td>
 							<td class="report-month__table-weekend"></td>
 							<td class="report-month__table-weekend last"></td>
 							<td></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">4:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:00</button></td>
 							<td class="report-month__table-weekend"></td>
 							<td class="report-month__table-weekend last"></td>
 							<td></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">4:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:00</button></td>
 							<td class="report-month__table-weekend"></td>
 							<td class="report-month__table-weekend last"></td>
 							<td></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
-							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">4:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal2" class="table__modal">6:00</button></td>
 							<td class="report-month__table-weekend"></td>
 							<td class="report-month__table-weekend last"></td>
 							<td></td>
@@ -245,7 +248,42 @@
       			<div class="modal-header">
       				<div class="myModal__date">
       					<h4>October 12, 2016</h4>
-      					<h5><i class="fa fa-code-fork" aria-hidden="true"></i>android_demo_release</h5>
+      					<h5 class="myModal-user">@ Kyle Walters</h5>
+      				</div>
+      					
+        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+        		</div>
+		      	<div class="modal-body">
+		        	<div class="myModal__holder">
+		        		<div class="myModal__describe">
+		        			<h5>Deciders table: county/city logo must be changes after pressing GO button</h5>
+		        		</div>
+		        		<div class="myModal__result">
+		        			<h5>Total: 1:00 h</h5>
+		        		</div>
+		        	</div>
+		        	<div class="myModal__holder">
+		        		<div class="myModal__describe">
+		        			<h5>Deciders table: county/city logo must be changes after pressing GO button</h5>
+		        		</div>
+		        		<div class="myModal__result">
+		        			<h5>Total: 1:00 h</h5>
+		        		</div>
+		        	</div>
+		      	</div>
+      			<div class="modal-footer">
+      				<h4>Total: 1:30 h</h4>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+      				<div class="myModal__date">
+      					<h4>October 12, 2016</h4>
+      					<h5 class="myModal-user">@ Samuel Chen</h5>
       				</div>
       					
         			<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>

@@ -10,7 +10,11 @@
     <![endif]-->
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>status edit</title>
@@ -68,18 +72,7 @@
 					</div>
 					<div class="main-date__form">
 						<form action="">
-							<select>
-								<option>October 2016</option>
-								<option>September 2016</option>
-								<option>August 2016</option>
-								<option>July 2016</option>
-								<option>June 2016</option>
-								<option>May 2016</option>
-								<option>April 2016</option>
-								<option>March 2016</option>
-								<option>February 2016</option>
-								<option>January 2016</option>
-							</select>
+							<input type="text" id="datepicker" placeholder="October">
 						</form>
 					</div>
 					<div class="main-date__right">
@@ -115,12 +108,12 @@
 							<td class="report-month__tabe-name"><h5>Tuna timer</h5></td>
 							<td></td>
 							<td></td>
-							<td>8:00</td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">8:00</button></td>
 							<td></td>
 							<td></td>
 							<td class="report-month__table-weekend"></td>
 							<td class="report-month__table-weekend last"></td>
-							<td>19:00</td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">19:30</button></td>
 						</tr>
 						<tr>
 							<td><input type="checkbox" name="check"></td>
@@ -128,8 +121,8 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>6:30</td>
-							<td>4:00</td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">8:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:30</button></td>
 							<td class="report-month__table-weekend"></td>
 							<td class="report-month__table-weekend last"></td>
 							<td>33:00</td>
@@ -140,8 +133,8 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>6:30</td>
-							<td>4:00</td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
 							<td class="report-month__table-weekend"></td>
 							<td class="report-month__table-weekend last"></td>
 							<td>33:00</td>
@@ -159,8 +152,45 @@
 			<h6>(c) CleverUA</h6>
 		</div>
 	</footer>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+      				<div class="myModal__date">
+      					<h4>October 12, 2016</h4>
+      					<h5 class="myModal-user">@ Kyle Walters</h5>
+      				</div>
+      					
+        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+        		</div>
+		      	<div class="modal-body">
+		        	<div class="myModal__holder">
+		        		<div class="myModal__describe">
+		        			<h5>Deciders table: county/city logo must be changes after pressing GO button</h5>
+		        		</div>
+		        		<div class="myModal__result">
+		        			<h5>Total: 1:00 h</h5>
+		        		</div>
+		        	</div>
+		        	<div class="myModal__holder">
+		        		<div class="myModal__describe">
+		        			<h5>Deciders table: county/city logo must be changes after pressing GO button</h5>
+		        		</div>
+		        		<div class="myModal__result">
+		        			<h5>Total: 1:00 h</h5>
+		        		</div>
+		        	</div>
+		      	</div>
+      			<div class="modal-footer">
+      				<h4>Total: 1:30 h</h4>
+      			</div>
+    		</div>
+  		</div>
+	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 	<script>
 		(function($) {
 			$(function() {
@@ -172,6 +202,9 @@
                 $('.main-task__btn-active').toggleClass('main-task__btn-pause');
             });
         });
+        $( function() {
+		    $( "#datepicker" ).datepicker();
+		} );
 	</script>
 </body>
 </html>
