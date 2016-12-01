@@ -333,6 +333,7 @@ textarea{
     color: #4a4a4a;
     outline: none;
     resize: none;
+    overflow: hidden;
 }
 .main-task__item-select{
     display: inline-block;
@@ -895,5 +896,21 @@ tr .table-last{
     }
     .header__admin{
         padding-left: 252px;
+    }
+}
+@media(max-width: 1299px){
+    .report-container,
+    .header_container{
+        width: 100%;
+    }
+    .header__task{
+        padding-left: 0;
+        padding-right: 5px;
+    }
+    .header__hour{
+        padding: 0 4px;
+    }
+    .header__user{
+        padding-left: 0;
     }
 }
