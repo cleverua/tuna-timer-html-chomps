@@ -16,33 +16,66 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__col">
-			<div class="header__logo col-3">
-				<img src="img/TunaTimer.png" alt="">
+		<div class="header_container header_container-desctop">
+			<div class="header__col header__col-left">
+				<div class="header__logo col-3">
+					<img src="img/TunaTimer.png" alt="">
+				</div>
+				<nav class="header__nav col-3">
+					<ul>
+						<li class="header__nav-active"><a href="#">Status</a></li>
+						<li><a href="report-month.html">Report</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="header__nav col-3">
-				<ul>
-					<li class="header__nav-active"><a href="#">Status</a></li>
-					<li><a href="report-month.html">Report</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="header__col">
-			<div class="header__task col-4">
-				<button class="header__task_btn">ADD NEW TASK</button>
+			<div class="header__col header__col-right">
+				<div class="header__task">
+					<button class="header__task_btn">ADD NEW TASK</button>
+				</div>
+				<div class="header__hour">
+				<p>Your total for today</p>
+				<h5>8:30 <span>h</span></h5>
 			</div>
-			<div class="header__hour col-2">
-			<p>Your total for today</p>
-			<h5>8:30 <span>h</span></h5>
+				<div class="header__user">
+					<form>
+						<select>
+							<option>@ Sergey_Sokolenko</option>
+							<option>@ Artem_Zhuravlev</option>
+							<option>@ Ivan_Ivanov</option>
+						</select>
+					</form>
+				</div>
+			</div>
 		</div>
-			<div class="header__user col-4">
-				<form>
-					<select>
-						<option>@ Sergey_Sokolenko</option>
-						<option>@ Sergey_Sokolenko</option>
-						<option>@ Sergey_Sokolenko</option>
-					</select>
-				</form>
+		<div class="header_container header_container-mobile">
+			<div class="header__col header__col-left">
+				<div class="header__logo col-3">
+					<img src="img/TunaTimer.png" alt="">
+				</div>
+				<nav class="header__nav col-3">
+					<ul>
+						<li class="header__nav-active"><a href="#">Status</a></li>
+						<li><a href="report-month.html">Report</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__col header__col-right">
+				<div class="header__task">
+					<button class="header__task_btn"></button>
+				</div>
+				<div class="header__hour">
+				<p>Your total for today</p>
+				<h5>8:30 <span>h</span></h5>
+			</div>
+				<div class="header__user">
+					<form>
+						<select>
+							<option>@ Sergey_Sokolenko</option>
+							<option>@ Artem_Zhuravlev</option>
+							<option>@ Ivan_Ivanov</option>
+						</select>
+					</form>
+				</div>
 			</div>
 		</div>
 	</header>
