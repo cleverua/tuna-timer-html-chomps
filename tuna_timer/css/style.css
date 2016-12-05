@@ -110,15 +110,15 @@ textarea{
 .header_container{
     width: 100%;
     margin: 0 auto;
+    height: 70px;
 }
 .header__col{
     width: 49%;
+    display: inline-block;
 }
 .header__col-left{
-    float: left;
 }
 .header__col-right{
-    float: right;
     height: 70px;
 }
 .header__logo{
@@ -157,7 +157,7 @@ textarea{
 .header__hour,
 .header__user,
 .header__admin{
-    float: left;
+    float: right;
     height: 50px;
     margin: 10px 0; 
 }
@@ -170,7 +170,7 @@ textarea{
     color: #fff;
 }
 .header__task{
-    padding: 0 15px 0 300px;
+    padding: 0 15px 0 0;
 }
 .header__task .header__task_btn{
     float: right;
