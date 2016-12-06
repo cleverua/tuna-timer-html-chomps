@@ -18,7 +18,7 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header_container">
+		<div class="header_container header_container-desctop">
 			<div class="header__col header__col-left">
 				<div class="header__logo col-3">
 					<img src="img/TunaTimer.png" alt="">
@@ -31,13 +31,6 @@
 				</nav>
 			</div>
 			<div class="header__col header__col-right">
-				<div class="header__task">
-					<button class="header__task_btn">ADD NEW TASK</button>
-				</div>
-				<div class="header__hour">
-				<p>Your total for today</p>
-				<h5>8:30 <span>h</span></h5>
-			</div>
 				<div class="header__user">
 					<form>
 						<select>
@@ -47,10 +40,47 @@
 						</select>
 					</form>
 				</div>
+				<div class="header__hour">
+					<p>Your total for today</p>
+					<h5>8:30 <span>h</span></h5>
+				</div>
+				<div class="header__task">
+					<button class="header__task_btn">ADD NEW TASK</button>
+				</div>
+			</div>
+		</div>
+		<div class="header_container header_container-mobile">
+			<div class="header__col header__col-left">
+				<div class="header__logo col-3">
+					<img src="img/TunaTimer.png" alt="">
+				</div>
+				<nav class="header__nav col-3">
+					<ul>
+						<li><a href="index.html">Status</a></li>
+						<li class="header__nav-active"><a href="#">Report</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__col header__col-right">
+				<div class="header__user">
+					<form>
+						<select>
+							<option>@ Sergey_Sokolenko</option>
+							<option>@ Artem_Zhuravlev</option>
+							<option>@ Ivan_Ivanov</option>
+						</select>
+					</form>
+				</div>
+				<div class="header__hour">
+					<p>Your total for today</p>
+					<h5>8:30 <span>h</span></h5>
+				</div>
+				<div class="header__task">
+					<button class="header__task_btn"></button>
+				</div>
 			</div>
 		</div>
 	</header>
-
 	<main class="main">
 		<div class="main-tabs">
 			<div class="container">
@@ -105,112 +135,147 @@
 							<td class="report-month__tabe-name"><h5>PROJECT</h5></td>
 							<td><h5>01</h5><h6>S</h6></td>
 							<td><h5>02</h5><h6>S</h6></td>
-							<td><h5>03</h5><h6>M</h6></td>
+							<td class="left-side"><h5>03</h5><h6>M</h6></td>
 							<td><h5>04</h5><h6>T</h6></td>
 							<td><h5>05</h5><h6>W</h6></td>
 							<td><h5>06</h5><h6>F</h6></td>
 							<td><h5>07</h5><h6>F</h6></td>
-							<td><h5>08</h5><h6>S</h6></td>
+							<td class="left-side"><h5>08</h5><h6>S</h6></td>
 							<td><h5>09</h5><h6>S</h6></td>
-							<td><h5>10</h5><h6>M</h6></td>
+							<td class="left-side"><h5>10</h5><h6>M</h6></td>
 							<td><h5>11</h5><h6>T</h6></td>
 							<td><h5>12</h5><h6>W</h6></td>
 							<td><h5>13</h5><h6>F</h6></td>
 							<td><h5>14</h5><h6>F</h6></td>
-							<td><h5>15</h5><h6>S</h6></td>
+							<td class="left-side"><h5>15</h5><h6>S</h6></td>
 							<td><h5>16</h5><h6>S</h6></td>
-							<td><h5>17</h5><h6>M</h6></td>
+							<td class="left-side"><h5>17</h5><h6>M</h6></td>
 							<td><h5>18</h5><h6>T</h6></td>
 							<td><h5>19</h5><h6>W</h6></td>
 							<td><h5>20</h5><h6>F</h6></td>
 							<td><h5>21</h5><h6>F</h6></td>
-							<td><h5>22</h5><h6>S</h6></td>
+							<td class="left-side"><h5>22</h5><h6>S</h6></td>
 							<td><h5>23</h5><h6>S</h6></td>
-							<td><h5>24</h5><h6>M</h6></td>
+							<td class="left-side"><h5>24</h5><h6>M</h6></td>
 							<td><h5>25</h5><h6>T</h6></td>
 							<td><h5>26</h5><h6>W</h6></td>
 							<td><h5>27</h5><h6>F</h6></td>
 							<td><h5>28</h5><h6>F</h6></td>
-							<td><h5>29</h5><h6>S</h6></td>
+							<td class="left-side"><h5>29</h5><h6>S</h6></td>
 							<td><h5>30</h5><h6>S</h6></td>
-							<td><h5>31</h5><h6>M</h6></td>
-							<td><h5>TIME</h5></td>
+							<td class="left-side"><h5>31</h5><h6>M</h6></td>
+							<td class="table-last left-side"><h5>TIME</h5></td>
 						</tr>
 						<tr class="report-month__tabe-time">
 							<td><input type="checkbox" name="check"></td>
 							<td class="report-month__tabe-name"><h5>Tuna timer</h5></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">8:00</button></td>
 							<td></td>
 							<td></td>
 							<td></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">1:30</button></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">8:00</button></td>
 							<td></td>
 							<td></td>
 							<td></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">1:30</button></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td></td>
 							<td></td>
 							<td></td>
 							<td></td>
 							<td></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td></td>
 							<td></td>
 							<td></td>
 							<td></td>
 							<td></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td></td>
-							<td>19:00</td>
+							<td class="table-last left-side">19:00</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox" name="check"></td>
 							<td class="report-month__tabe-name"><h5>android_demo_release</h5></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
 							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
-							<td class="report-month__table-weekend"></td>
-							<td class="report-month__table-weekend last"></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
 							<td></td>
-							<td>33:00</td>
+							<td class="table-last left-side">33:00</td>
 						</tr>
 						<tr class="report-month__result">
-							<td colspan="2" class="report-month__all"><h5>Daily hours total:</h5></td>
-							<td colspan="2"></td>
+							<td colspan="2" class="report-month__all table-last"><h5>Daily hours total:</h5></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
+							<td></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
+							<td></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
+							<td></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
+							<td></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:30</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">4:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td><button type="button" data-toggle="modal" data-target="#myModal" class="table__modal">6:00</button></td>
+							<td class="report-month__table-weekend left-side"></td>
+							<td class="report-month__table-weekend last right-side"></td>
+							<td></td>
+							<td class="table-last left-side">33:00</td>
+						</tr>
+						<tr class="report-month__result-total">
+							<td colspan="2" class="report-month__all table-last"><h5>Weekly hours total:</h5></td>
+							<td colspan="2" class="left-side"></td>
 							<td colspan="7" class="report-month__hours">
 								<h5>26:00</h5>
 							</td>
@@ -223,12 +288,12 @@
 							<td colspan="7" class="report-month__hours">
 								<h5>26:00</h5>
 							</td>
-							<td colspan="2" class="report-month__hours">
+							<td colspan="2" class="report-month__hours table-last">
 								
 							</td>
 						</tr>
-						<tr class="report-month__result-all">
-							<td colspan="34" rowspan="2" class="report-month__all"><h3>Monthly hours Total: <span>52:00 h</span></h3></td>
+						<tr class="report-month__result-all table-last">
+							<td colspan="34" rowspan="2" class="report-month__all table-last"><h3>Monthly hours Total: <span>52:00 h</span></h3></td>
 						</tr>
 					</table>
 				</form>
