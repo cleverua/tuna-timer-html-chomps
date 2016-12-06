@@ -381,7 +381,7 @@ textarea{
 .main-task__btn-active:hover{
     width: 34px;
     height: 34px;
-    margin-left: 12px;
+    margin-left: 60px;
     background: url(../img/play-active.png)no-repeat center center;
     vertical-align: middle;
     object-fit: contain;
@@ -936,5 +936,26 @@ tr .table-last{
     .report-copy{
         margin-right: 20px;
     }
+    .header_container-mobile .jq-selectbox__select-text{
+        font-size: 0;
+    }
+    .header_container-mobile .jq-selectbox{
+        position: static!important;
+    }
+    .header_container-mobile .jq-selectbox__dropdown{
+        width: 15%;
+    }
+    .header_container-mobile select{
+        width: 0 !important;
+        height: 0 !important;
+    }
 
+}
+@media(max-width: 990px){
+    .header_container-mobile .header__logo{
+        width: 35%;
+    }
+    .header_container-mobile .header__nav{
+        width: 65%;
+    }
 }
