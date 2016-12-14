@@ -1087,11 +1087,15 @@ tr .table-last{
 .calendar-week__event-col{
     display: inline-block;
     width: 14.28%;
+    border-left: solid 1px #416a9c;
 }
 .calendar-week__event-title,
 .calendar-week__event-desc{
-    border-left: solid 1px #416a9c;
+    
     border-bottom: solid 1px #416a9c;
+}
+.calendar-week__event-col--first{
+    border-left: none !important;
 }
 .calendar-week__event-title h4{
     font-size: 14px;
@@ -1103,11 +1107,16 @@ tr .table-last{
     padding: 0 6px;
     min-height: 180px;
 }
+.calendar-week__event-desc--dot{
+    min-height: 140px;
+}
 .calendar-week__event-desc h5{
     color: #fff;
     font-size: 12px;
-    margin-bottom: 5px; 
-    margin-top: 5px;
+    padding: 5px 0;
+}
+.calendar-week__event-desc-bg{
+    background: #416a9c;
 }
 .event-btn-blue,
 .event-btn-green,
@@ -1128,18 +1137,19 @@ tr .table-last{
     background: #ffba3a;
 }
 .calendar-week__event-result{
-    border-left: solid 1px #416a9c;
+    border-top: 1px solid #1c3d65;
 }
 .calendar-week__event-result{
     padding: 4px 0;
 }
 .calendar-week__event-result p{
     text-align: right;
-    padding-right: 4px;
+    padding-right: 10px;
     color: #fff;
 }
 .calendar-week__total{
-    border-top: 1px solid #416a9c;
+    border-top: 1px solid #1c3d65;
+    border-bottom: 1px solid #1c3d65;
 }
 .calendar-week__total h2{
     padding: 28px 19px;
@@ -1147,4 +1157,32 @@ tr .table-last{
     font-size: 24px;
     text-align: right;
     font-weight: 400;
+}
+/*@media(max-width: 990px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+}*/
+
+
+/*report-calendar-month styles*/
+.event-dot-blue,
+.event-dot-green,
+.event-dot-orange{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 3px;
+    
+}
+.event-dot-blue{
+    background: #50e3c2;
+}
+.event-dot-green{
+    background: #7ed321;
+}
+.event-dot-orange{
+    background: #ffba3a;
 }
