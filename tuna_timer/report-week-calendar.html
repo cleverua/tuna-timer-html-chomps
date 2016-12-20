@@ -176,9 +176,9 @@
 						</div>
 						<div class="calendar-week__event-desc">
 							<h5>15</h5>
-							<button class="event-btn-blue">Associated Pus…</button>
-							<button class="event-btn-green">Prototype</button>
-							<button class="event-btn-orange">RabbitMQ</button>
+							<button class="event-btn-blue"  type="button" data-toggle="modal" data-target="#myModal2">Associated Pus…</button>
+							<button class="event-btn-green"  type="button" data-toggle="modal" data-target="#myModal2">Prototype</button>
+							<button class="event-btn-orange"  type="button" data-toggle="modal" data-target="#myModal2">RabbitMQ</button>
 						</div>
 						<div class="calendar-week__event-result">
 							<p>1:50 h</p>
@@ -190,8 +190,8 @@
 						</div>
 						<div class="calendar-week__event-desc">
 							<h5>16</h5>
-							<button class="event-btn-orange">RabbitMQ</button>
-							<button class="event-btn-green">Prototype</button>
+							<button class="event-btn-orange"  type="button" data-toggle="modal" data-target="#myModal2">RabbitMQ</button>
+							<button class="event-btn-green"  type="button" data-toggle="modal" data-target="#myModal2">Prototype</button>
 						</div>
 						<div class="calendar-week__event-result">
 							<p>4:39 h</p>
@@ -203,9 +203,9 @@
 						</div>
 						<div class="calendar-week__event-desc">
 							<h5>17</h5>
-							<button class="event-btn-blue">Associated Pus…</button>
-							<button class="event-btn-orange">RabbitMQ</button>
-							<button class="event-btn-green">Prototype</button>
+							<button class="event-btn-blue"  type="button" data-toggle="modal" data-target="#myModal2">Associated Pus…</button>
+							<button class="event-btn-orange"  type="button" data-toggle="modal" data-target="#myModal2">RabbitMQ</button>
+							<button class="event-btn-green"  type="button" data-toggle="modal" data-target="#myModal2">Prototype</button>
 						</div>
 						<div class="calendar-week__event-result">
 							<p>7:45 h</p>
@@ -217,9 +217,9 @@
 						</div>
 						<div class="calendar-week__event-desc">
 							<h5>18</h5>
-							<button class="event-btn-green">Prototype</button>
-							<button class="event-btn-blue">Associated Pus…</button>
-							<button class="event-btn-orange">RabbitMQ</button>
+							<button class="event-btn-green"  type="button" data-toggle="modal" data-target="#myModal2">Prototype</button>
+							<button class="event-btn-blue"  type="button" data-toggle="modal" data-target="#myModal2">Associated Pus…</button>
+							<button class="event-btn-orange"  type="button" data-toggle="modal" data-target="#myModal2">RabbitMQ</button>
 						</div>
 						<div class="calendar-week__event-result">
 							<p>8:31 h</p>
@@ -231,9 +231,9 @@
 						</div>
 						<div class="calendar-week__event-desc">
 							<h5>19</h5>
-							<button class="event-btn-orange">RabbitMQ</button>
-							<button class="event-btn-green">Prototype</button>
-							<button class="event-btn-blue">Associated Pus…</button>
+							<button class="event-btn-orange"  type="button" data-toggle="modal" data-target="#myModal2">RabbitMQ</button>
+							<button class="event-btn-green"  type="button" data-toggle="modal" data-target="#myModal2">Prototype</button>
+							<button class="event-btn-blue"  type="button" data-toggle="modal" data-target="#myModal2">Associated Pus…</button>
 						</div>
 						<div class="calendar-week__event-result">
 							<p>7:29 h</p>
@@ -262,8 +262,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="calendar-week__total">
-					<h2>Weekly hours Total:	<span>30:14 h</span></h2>
+				<div class="calendar-week__total total__week-calendar">
+					<h2>Weekly hours Total:	<button class="calendar-button-result" type="button" data-toggle="modal" data-target="#myModal2">30:14 h</button></h2>
 				</div>
 			</div>
 		</div>
@@ -273,13 +273,12 @@
 			<h6>(c) CleverUA</h6>
 		</div>
 	</footer>
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   		<div class="modal-dialog">
     		<div class="modal-content">
       			<div class="modal-header">
       				<div class="myModal__date">
-      					<h4>October 12, 2016</h4>
-      					<h5 class="myModal-user">@ Kyle Walters</h5>
+      					<h4><i class="fa fa-code-fork" aria-hidden="true"></i> android_demo_release</h4>
       				</div>
       					
         			<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -302,9 +301,6 @@
 		        		</div>
 		        	</div>
 		      	</div>
-      			<div class="modal-footer">
-      				<h4>Total: 1:30 h</h4>
-      			</div>
     		</div>
   		</div>
 	</div>

@@ -1052,19 +1052,28 @@ tr .table-last{
     display: inline-block;
     padding:0 2px;
     text-align: center;
+
     border-right: solid 1px #1c3d65;
 }
-.calendar-week__calendar-week--active ul li{
+.calendar-week__calendar-week:hover ul li{
     color: #fff !important;
 }
 .calendar-week__calendar-week ul li{
     display: inline-block;
     color: #1c3d65;
+    transition: .5s;
 }
 .calendar-week__calendar-btn{
     display: block;
     margin-top: 3px;
     background: transparent;
+    transition: .3s;
+}
+.calendar-week__calendar-btn:hover{
+    text-align: center;
+    background: #1c3f68;
+    color: #fff;
+    border-radius: 4px;
 }
 .calendar-week__calendar-btn--active{
     width: 25px;
@@ -1158,6 +1167,9 @@ tr .table-last{
     text-align: right;
     font-weight: 400;
 }
+.total__week-calendar{
+    border-top:1px solid #416a9c ;
+}
 /*@media(max-width: 990px){
     .container{
         width: 90%;
@@ -1185,4 +1197,37 @@ tr .table-last{
 }
 .event-dot-orange{
     background: #ffba3a;
+}
+
+#myModal2 .modal-content{
+    border-radius: 4px;
+    background: #416a9c;
+}
+#myModal2 .modal-header{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #416a9c;
+    border-bottom: none;
+}
+#myModal2 .modal-body{
+    background: #416a9c;
+}
+#myModal2 .myModal__describe{
+    background: #416a9c;
+}
+#myModal2 .myModal__holder{
+    box-shadow: none;
+}
+#myModal2 .myModal__describe h5{
+    color: #8aacd5;
+}
+#myModal2 .myModal__result{
+    background: #416a9c;
+}
+#myModal2 .myModal__result h5{
+    color: #fff;
+    font-style: normal;
+}
+.calendar-button-result{
+    background: transparent;
 }
