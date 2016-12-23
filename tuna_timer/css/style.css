@@ -1253,15 +1253,23 @@ tr .table-last{
     overflow: hidden;
 }
 #sidebar{
-    width: 308px;
+    width: 25%;
     min-height: 100%;
     background: #12253b;
     flex-shrink: 0;
     position: relative;
 }
+.fluid-container{
+    width: 100%;
+    margin: auto;
+}
 #main-content{
+    width: 75%;
     flex-grow: 1;
     background: #1c3d65;
+}
+.main-calendar{
+    margin: 0 3%;
 }
 .sidebar-header{
     height: 70px;
