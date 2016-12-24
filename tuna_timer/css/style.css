@@ -1370,6 +1370,7 @@ tr .table-last{
     padding-left: 13px;
     color: #fff;
     font-size: 18px;
+    cursor: pointer;
 }
 .ui_ux{
     border-left: 10px solid #7ed321;
@@ -1711,4 +1712,107 @@ tr .table-last{
 }
 .header__col-day{
     width: 95%;
+}
+
+
+/*week.html styles*/
+.ccalendar__week-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.ccalendar__week-table td{
+    width: 14.28%;
+    border-left: 1px solid #416a9c;
+}
+.ccalendar__week-table-days td{
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    color: #9cc7fa;
+}
+.calendar-week__sector td{
+    position: relative;
+    border-left: solid 1px #1c3f68;
+    padding-bottom: 32px;
+    background-color: #416a9c;
+    vertical-align: top;
+}
+.calendar-week__sector .calendar-week__sector--first{
+    border-left: none;
+}
+.calendar-week__sector td h5{
+    display: block;
+    padding: 14px  0 5px 7px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+}
+.calendar-week__sector h6{
+    position: absolute;
+    right: 7px;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+}
+.ui_ux_btn,
+.useful-links_btn,
+.tuna-timer_btn{
+    display: block;
+    width: 95%;
+    padding: 4px 0;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4px;
+    background-color: #2a4d79;
+    color: #fff;
+}
+.ui_ux_btn{
+    border-left: 6px solid #7ed321;
+}
+.useful-links_btn{
+    border-left: 6px solid #9b9b9b;
+}
+.tuna-timer_btn{
+    border-left: 6px solid #ffba3a;
+}
+.calendar-week__sector-total-col{
+    background-color: #416a9c;
+    border-top: 1px solid #1c3f68;
+}
+.calendar-week__sector-total{
+    padding: 11px 0;
+}
+.calendar-week__sector-total h2{
+    padding-right: 18px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: right;
+}
+.calendar-week__sector-static{
+    height: 27px;
+    border-bottom: 1px solid #416a9c;
+}
+.calendar-week__sector-static h5{
+    display: inline-block;
+    width: 49%;
+    padding-left: 6px;
+    color: #7fa7d9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.calendar-week__sector-static h6{
+    display: inline-block;
+    padding-right: 6px;
+    width: 49%;
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
