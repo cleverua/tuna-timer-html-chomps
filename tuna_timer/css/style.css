@@ -1551,23 +1551,23 @@ tr .table-last{
     padding-right: 3px;
 }
 .calendar-day__holder-tasks-item{
-    padding-left: 63px;
+    padding-left: 62px;
     margin-bottom: 4px;
     transition: .5s;
 }
-.calendar-dday__hour{
+.calendar-day__hour{
     display: inline-block;
     width: 12%;
     text-align: right;
 }
-.calendar-dday__hour h5{
+.calendar-day__hour h5{
     text-align: left;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     margin-right: 19px;
     display: inline-block;
 }
-.calendar-dday__hour h5:after{
+.calendar-day__hour h5:after{
     content: "";
     width: 10px;
     height: 10px;
@@ -1577,8 +1577,8 @@ tr .table-last{
     vertical-align: -1px;
     margin-left: 5px;
 }
-.calendar-dday__col--active,
-.calendar-dday__col{
+.calendar-day__col--active,
+.calendar-day__col{
     position: relative;
     background-color: #1c3d65;
     padding: 10px 0 10px 35px;
@@ -1594,34 +1594,34 @@ tr .table-last{
 .border-gray{
     border-left: 6px solid #9b9b9b;
 }
-.calendar-dday__col--active{
+.calendar-day__col--active{
     background-color: #1c3d65;
 }
-.calendar-dday__col{
+.calendar-day__col{
     background-color: #244670;
 }
-.calendar-dday__col-title{
+.calendar-day__col-title{
     width: 50%;
     display: inline-block;
     vertical-align: middle;
 }
-.calendar-dday__col-title h4{
+.calendar-day__col-title h4{
     color: #fff;
     font-size: 14px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
-.calendar-dday__item-select{
+.calendar-day__item-select{
     width: 25%;
     display: inline-block;
 }
-.calendar-dday__item-select .jq-selectbox__select-text{
+.calendar-day__item-select .jq-selectbox__select-text{
     color: #fff;
     opacity: .6;
     font-size: 14px;
     width: 120px;
 }
-.calendar-dday__item-select .jq-selectbox__select-text:after{
+.calendar-day__item-select .jq-selectbox__select-text:after{
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -1630,7 +1630,7 @@ tr .table-last{
     margin-left: 5px;
     background: url(../img/arrow_down.svg)no-repeat;
 }
-.calendar-dday__btn{
+.calendar-day__btn{
     width: 18px;
     height: 18px;
     background: url(../img/play-circle-outline.svg)no-repeat;
@@ -1638,28 +1638,28 @@ tr .table-last{
     vertical-align: middle;
     cursor: pointer;
 }
-.calendar-dday__btn-pause{
+.calendar-day__btn-pause{
     width: 18px;
     height: 18px;
     background: url(../img/pause_btn.svg)no-repeat;
     display: inline-block;
     vertical-align: middle;
 }
-.calendar-dday__btn__item-hour{
+.calendar-day__btn__item-hour{
     display: inline-block;
     width: 20%;
 }
-.calendar-dday__btn__item-hour h3{
+.calendar-day__btn__item-hour h3{
     padding-left: 50px;
     color: #fff;
     font-size: 14px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
-.calendar-day__holder-tasks-item:hover .calendar-dday__close{
+.calendar-day__holder-tasks-item:hover .calendar-day__close{
     display: block;
 }
-.calendar-dday__close{
+.calendar-day__close{
     position: absolute;
     top: 0;
     bottom: 0;
