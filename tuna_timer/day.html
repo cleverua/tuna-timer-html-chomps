@@ -164,68 +164,48 @@ Report</a></li>
 								</div>
 							</div>
 						</div>
-						<div class="calendar-week__holder-event">
-							<div class="calendar-week__event-col calendar-week__event-col--first">
-								<div class="calendar-week__event-title ">
-									<h4>Sunday</h4>
-								</div>
-								<div class="calendar-day__event-desc calendar-day__event-desc--active">
+						<table class="ccalendar__week-table">
+							<tr class="ccalendar__week-table-days">
+								<td>Monday</td>
+								<td>Tuesday</td>
+								<td>Wednesday</td>
+								<td>Thursday</td>
+								<td>Friday</td>
+								<td>Saturday</td>
+								<td>Sunday</td>	
+							</tr>
+							<tr class="calendar-week__sector-static"">
+								<td class="calendar-week__sector--first calendar-day__event-desc--active">
 									<h5>1</h5>
-								</div>			
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-week__event-title">
-									<h4>Tuesday</h4>
-								</div>
-								<div class="calendar-day__event-desc">
+								</td>
+								<td>
 									<h5>2</h5>
-									<h6>5:10</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-week__event-title">
-									<h4>Wednesday</h4>
-								</div>
-								<div class="calendar-day__event-desc">
+									<button class="calendar-week__sector-btn">
+										<span class="orange-border"></span>
+									7:00</button>
+								</td>
+								<td>
 									<h5>3</h5>
-									<h6>8:00</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-week__event-title">
-									<h4>Thursday</h4>
-								</div>
-								<div class="calendar-day__event-desc">
+									<button class="calendar-week__sector-btn">
+										<span class="green-border"></span>
+									8:21</button>
+								</td>
+								<td>
 									<h5>4</h5>
-									<h6>8:00</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-week__event-title">
-									<h4>Friday</h4>
-								</div>
-								<div class="calendar-day__event-desc">
+									<button class="calendar-week__sector-btn">
+										<span class="orange-border"></span>
+									7:00</button>
+								</td>
+								<td>
 									<h5>5</h5>
-									<h6>7:13</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-week__event-title">
-									<h4>Saturday</h4>
-								</div>
-								<div class="calendar-day__event-desc">
-									<h5>6</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-week__event-title">
-									<h4>Sunday</h4>
-								</div>
-								<div class="calendar-day__event-desc">
-									<h5>7</h5>
-								</div>
-							</div>
-						</div>
+									<button class="calendar-week__sector-btn">
+										<span class="green-border"></span>
+									8:21</button>
+								</td>
+								<td><h5>6</h5></td>
+								<td><h5>7</h5></td>	
+							</tr>
+						</table>
 						<div class="calendar-day__holder-tasks">
 							<h5><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i> Tasks</h5>
 							<div class="calendar-day__holder-tasks-item">
@@ -235,7 +215,8 @@ Report</a></li>
 								<div class="calendar-day__col--active">
 									<form action="">
 										<div class="calendar-day__col-title">
-											<h4>Upgrade the project to rails 5.0</h4>
+											<textarea class="calendar-day__col-title-field" data="rezine" rows="1">Upgrade the project to rails 5.0</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<div class="calendar-day__item-select">
 											<select>
@@ -247,7 +228,8 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn calendar-day__btn--active"></div>
 										<div class="calendar-day__btn__item-hour">
-											<h3>1:50</h3>
+											<textarea class="calendar-day__btn__item-hour-field" data="rezine">1:50</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
 									</form>
@@ -260,7 +242,8 @@ Report</a></li>
 								<div class="calendar-day__col">
 									<form action="">
 										<div class="calendar-day__col-title">
-											<h4>Bushwick meh Blue Bottle pork.</h4>
+											<textarea class="calendar-day__col-title-field" data="rezine" rows="1">Bushwick meh Blue Bottle pork.</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<div class="calendar-day__item-select">
 											<select>
@@ -272,7 +255,8 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<h3>2:50</h3>
+											<textarea class="calendar-day__btn__item-hour-field" data="rezine">2:50</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
 									</form>
@@ -285,7 +269,7 @@ Report</a></li>
 								<div class="calendar-day__col--active border-orange">
 									<form action="">
 										<div class="calendar-day__col-title">
-											<h4>Banjo tote bag bicycle rights.</h4>
+											<textarea class="calendar-day__col-title-field" data="rezine" rows="1">Banjo tote bag bicycle rights.</textarea>
 										</div>
 										<div class="calendar-day__item-select">
 											<select>
@@ -297,7 +281,8 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<h3>3:50</h3>
+											<textarea class="calendar-day__btn__item-hour-field" data="rezine" rows="1">3:50</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
 									</form>
@@ -310,7 +295,8 @@ Report</a></li>
 								<div class="calendar-day__col">
 									<form action="">
 										<div class="calendar-day__col-title">
-											<h4>Bushwick meh Blue Bottle pork.</h4>
+											<textarea class="calendar-day__col-title-field" data="rezine" rows="1">Bushwick meh Blue Bottle pork.</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<div class="calendar-day__item-select">
 											<select>
@@ -322,7 +308,8 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<h3>1:50</h3>
+											<textarea class="calendar-day__btn__item-hour-field" data="rezine">1:50</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
 									</form>
@@ -335,7 +322,8 @@ Report</a></li>
 								<div class="calendar-day__col--active border-gray">
 									<form action="">
 										<div class="calendar-day__col-title">
-											<h4>Deciders table: county/city logo must be changes after pressing GO button</h4>
+											<textarea class="calendar-day__col-title-field" data="rezine">Deciders table: county/city logo must be changes after pressing GO button</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<div class="calendar-day__item-select">
 											<select>
@@ -347,7 +335,8 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<h3>2:30</h3>
+											<textarea class="calendar-day__btn__item-hour-field" data="rezine">2:30</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
 									</form>
@@ -360,7 +349,8 @@ Report</a></li>
 								<div class="calendar-day__col">
 									<form action="">
 										<div class="calendar-day__col-title">
-											<h4>Bushwick meh Blue Bottle pork.</h4>
+											<textarea class="calendar-day__col-title-field" data="rezine" rows="1">Bushwick meh Blue Bottle pork.</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<div class="calendar-day__item-select">
 											<select>
@@ -372,7 +362,8 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<h3>1:50</h3>
+											<textarea class="calendar-day__btn__item-hour-field" data="rezine">1:50</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
 									</form>
@@ -385,7 +376,8 @@ Report</a></li>
 								<div class="calendar-day__col--active border-gray">
 									<form action="">
 										<div class="calendar-day__col-title">
-											<h4>Retro occupy organic, stumpto.</h4>
+											<textarea class="calendar-day__col-title-field" data="rezine" rows="1">Retro occupy organic, stumpto.</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<div class="calendar-day__item-select">
 											<select>
@@ -397,186 +389,167 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<h3>2:40</h3>
+											<textarea class="calendar-day__btn__item-hour-field" data="rezine">2:40</textarea>
+											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
 									</form>
 								</div>
 							</div>
 						</div>
-						<div class="calendar-day__total">
-							<div class="calendar-day__total-col">
-								<ul class="calendar-day__total-nav">
-									<li><a href="#">Print report</a></li>
-									<li><a href="#">Export report</a></li>
-								</ul>
-							</div>
-							<div class="calendar-day__total-col">
-								<h2>Total: 8:20</h2>
-							</div>
-						</div>
-						<div class="calendar-week__holder-event">
-							<div class="calendar-week__event-col calendar-week__event-col--first">
-								<div class="calendar-day__event-desc calendar-day__event-desc">
+						<table class="ccalendar__week-table">
+							<tr class="calendar-week__sector-total-col">
+								<td colspan="3" class="calendar-week__sector-total">
+									<div class="calendar-day__total-col">
+										<ul class="calendar-day__total-nav">
+											<li><a href="#">Print report</a></li>
+											<li><a href="#">Export report</a></li>
+										</ul>
+									</div>
+								</td>
+								<td colspan="4" class="calendar-week__sector-total">
+									<h2>Weekly hours Total: 32:13 h</h2>
+								</td>
+							</tr>
+							<tr class="calendar-week__sector-static">
+								<td> 
 									<h5>8</h5>
-									<h6>7:29</h6>
-								</div>			
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>9</h5>
-									<h6>7:00</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>10</h5>
-									<h6>3:19</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>11</h5>
-									<h6>8:21</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>12</h5>
-									<h6>4:29</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>13</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>14</h5>
-								</div>
-							</div>
-						</div>
-						<div class="calendar-week__holder-event">
-							<div class="calendar-week__event-col calendar-week__event-col--first">
-								<div class="calendar-day__event-desc calendar-day__event-desc">
+									<button class="calendar-week__sector-btn">
+										<span class="orange-border"></span>
+										<span class="gray-border"></span>
+									7:29</button> 
+								</td>
+								<td> 
+									<h5>9</h5> 
+									<button class="calendar-week__sector-btn">
+										<span class="green-border"></span>
+									4:29</button> 
+								</td>
+								<td> 
+									<h5>10</h5> 
+									<button class="calendar-week__sector-btn">
+										<span class="orange-border"></span>
+									7:00</button> 
+								</td>
+								<td> 
+									<h5>11</h5> 
+									<button class="calendar-week__sector-btn">
+										<span class="green-border"></span>
+									3:19</button> 
+								</td>
+								<td> 
+									<h5>12</h5> 
+									<button class="calendar-week__sector-btn">
+										<span class="green-border"></span>
+									8:21</button> 
+								</td>
+								<td> 
+									<h5>13</h5>  
+								</td>
+								<td> 
+									<h5>14</h5> 
+								</td>
+							</tr>
+							<tr class="calendar-week__sector-static">
+								<td> 
 									<h5>15</h5>
-									<h6>1:50</h6>
-								</div>			
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>16</h5>
-									<h6>4:39</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>17</h5>
-									<h6>7:45</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>18</h5>
-									<h6>8:31</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>19</h5>
-									<h6>7:29</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>20</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>21</h5>
-								</div>
-							</div>
-						</div>
-						<div class="calendar-week__holder-event">
-							<div class="calendar-week__event-col calendar-week__event-col--first">
-								<div class="calendar-day__event-desc calendar-day__event-desc">
+									<button class="calendar-week__sector-btn">
+									<span class="orange-border"></span>
+									7:29</button> 
+								</td>
+								<td> 
+									<h5>16</h5> 
+									<button class="calendar-week__sector-btn">
+									<span class="green-border"></span>
+									4:29</button> 
+								</td>
+								<td> 
+									<h5>17</h5> 
+									<button class="calendar-week__sector-btn">
+									<span class="orange-border"></span>
+									7:00</button> 
+								</td>
+								<td> 
+									<h5>18</h5> 
+									<button class="calendar-week__sector-btn">
+									<span class="green-border"></span> 3:19</button> 
+								</td>
+								<td> 
+									<h5>19</h5> 
+									<button class="calendar-week__sector-btn">
+									<span class="orange-border"></span>
+									8:21</button> 
+								</td>
+								<td> 
+									<h5>20</h5>  
+								</td>
+								<td> 
+									<h5>21</h5> 
+								</td>
+							</tr>
+							<tr class="calendar-week__sector-static">
+								<td> 
 									<h5>22</h5>
-									<h6>2:15</h6>
-								</div>			
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>23</h5>
-									<h6>10:00</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>24</h5>
-									<h6>2:10</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>25</h5>
-									<h6>5:20</h6>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>26</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>27</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>28</h5>
-								</div>
-							</div>
-						</div>
-						<div class="calendar-week__holder-event">
-							<div class="calendar-week__event-col calendar-week__event-col--first">
-								<div class="calendar-day__event-desc calendar-day__event-desc">
+									<button class="calendar-week__sector-btn">
+									<span class="gray-border"></span>
+									7:29</button> 
+								</td>
+								<td> 
+									<h5>23</h5> 
+									<button class="calendar-week__sector-btn">
+									<span class="orange-border"></span>
+									4:29</button> 
+								</td>
+								<td> 
+									<h5>24</h5> 
+									<button class="calendar-week__sector-btn">
+									<span class="green-border"></span>7:00</button> 
+								</td>
+								<td> 
+									<h5>25</h5> 
+									<button class="calendar-week__sector-btn">
+									<span class="orange-border"></span>3:19</button> 
+								</td>
+								<td> 
+									<h5>26</h5> 
+									<button class="calendar-week__sector-btn">
+									<span class="green-border"></span>
+									8:21</button> 
+								</td>
+								<td> 
+									<h5>27</h5>  
+								</td>
+								<td> 
+									<h5>28</h5> 
+								</td>
+							</tr>
+							<tr class="calendar-week__sector-static">
+								<td> 
 									<h5>29</h5>
-								</div>			
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>30</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc">
-									<h5>31</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc new-month">
-									<h5>1</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc new-month">
-									<h5>2</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc new-month">
-									<h5>3</h5>
-								</div>
-							</div>
-							<div class="calendar-week__event-col">
-								<div class="calendar-day__event-desc new-month">
-									<h5>4</h5>
-								</div>
-							</div>
-						</div>
+									<button class="calendar-week__sector-btn">7:29</button> 
+								</td>
+								<td> 
+									<h5>30</h5> 
+									<button class="calendar-week__sector-btn">4:29</button> 
+								</td>
+								<td> 
+									<h5>31</h5> 
+									<button class="calendar-week__sector-btn">7:00</button> 
+								</td>
+								<td> 
+									<h5>1</h5> 
+								</td>
+								<td> 
+									<h5>2</h5>  
+								</td>
+								<td> 
+									<h5>3</h5>  
+								</td>
+								<td> 
+									<h5>4</h5> 
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</main>
@@ -616,6 +589,7 @@ Report</a></li>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/rezine.js"></script>
 	<script>
 		(function($) {
 			$(function() {
