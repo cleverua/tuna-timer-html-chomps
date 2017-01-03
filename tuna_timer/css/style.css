@@ -1050,10 +1050,34 @@ tr .table-last{
     background: #406a9c;
 }
 .calendar-week__calendar-title{
+    display: inline-block;
     color: #fff;
     font-size: 3em;
     padding: 10px 0 10px 18px;
     font-weight: 400;
+}
+.calendar-week__calendar-nav{
+    margin:15px 42px 0 0;
+    display: inline-block;
+    float: right;
+}
+.calendar-week__calendar-nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.calendar-week__calendar-nav ul li a{
+    font-size: 14px;
+    color: #1c3d65;
+    transition: .5s;
+}
+.calendar-week__calendar-nav ul li a:hover{
+    color: #fff;
+}
+.calendar-week__calendar-nav ul .active a{
+    display: block;
+    padding: 3px 6px;
+    color: #fff;
+    border: 1px solid #fff;
 }
 .calendar-week__calendar-holder{
     display: flex;
@@ -1253,6 +1277,13 @@ tr .table-last{
     flex-wrap: wrap;
     position: relative;
     height: 100%;
+    overflow: hidden;
+}
+#wrapper-week{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100vh;
     overflow: hidden;
 }
 #sidebar{
