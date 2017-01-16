@@ -20,13 +20,23 @@
 	<div id="wrapper">
 		<aside id="sidebar">
 			<div class="sidebar-header">
-				<h2 class="sidebar-heder__title">TunaTimerDevelop <i class="fa fa-bars" aria-hidden="true"></i></h2>
+				<div class="header__user">
+					<form>
+						<select>
+							<option>TunaTimerDevelop</option>
+							<option>@ Sergey_Sokolenko</option>
+							<option>@ Artem_Zhuravlev</option>
+							<option>@ Ivan_Ivanov</option>
+						</select>
+					</form>
+				</div>
+				<div class="sidebar-total">
+					<h3 class="sidebar-total__title">Your total for today is </h3>
+					<h4 class="sidebar-total__hour">8:20 <span>h</span></h4>
+					<button class="sidebar__task_btn">ADD TASK</button>
+				</div>
 			</div>
-			<div class="sidebar-total">
-				<h3 class="sidebar-total__title">Your total for today is </h3>
-				<h4 class="sidebar-total__hour">8:20 <span>h</span></h4>
-				<button class="sidebar__task_btn">ADD TASK</button>
-			</div>
+			
 			<ul class="sidebar-tabs">
 				<li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>
  Status</a></li>
@@ -71,7 +81,7 @@ Report</a></li>
 			<h3 class="footer-title">(c) CleverUA</h3>
 		</aside>
 		<div id="main-content">
-			<header class="header header-calendar">
+			<!-- <header class="header header-calendar">
 				<div class="header_container header_container-desctop">
 					<div class="header__col header__col-right header__col-day">
 						<div class="header__user">
@@ -85,7 +95,7 @@ Report</a></li>
 						</div>
 					</div>
 				</div>
-			</header>
+			</header> -->
 			<main class="main main-calendar ">
 				<div class="fluid-container">
 					<div class="calendar-week">
@@ -218,7 +228,7 @@ Report</a></li>
 								<div class="calendar-day__hour">
 									<h5>9:00 - 10:50</h5>
 								</div>
-								<div class="calendar-day__col--active">
+								<div class="calendar-day__col--active calendar-day__col--current">
 									<form action="">
 										<div class="calendar-day__col-title">
 											<textarea class="calendar-day__col-title-field" data="rezine" rows="1">Upgrade the project to rails 5.0</textarea>
@@ -234,7 +244,7 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn calendar-day__btn--active"></div>
 										<div class="calendar-day__btn__item-hour">
-											<textarea class="calendar-day__btn__item-hour-field" data="rezine">1:50</textarea>
+											<input type="text" name="calendar-day__btn__item-hour-field" value="1:50">
 											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
@@ -261,7 +271,7 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<textarea class="calendar-day__btn__item-hour-field" data="rezine">2:50</textarea>
+											<input type="text" name="calendar-day__btn__item-hour-field" value="2:50">
 											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
@@ -287,7 +297,7 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<textarea class="calendar-day__btn__item-hour-field" data="rezine" rows="1">3:50</textarea>
+											<input type="text" name="calendar-day__btn__item-hour-field" value="3:50">
 											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
@@ -314,7 +324,7 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<textarea class="calendar-day__btn__item-hour-field" data="rezine">1:50</textarea>
+											<input type="text" name="calendar-day__btn__item-hour-field" value="1:50">
 											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
@@ -341,7 +351,7 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<textarea class="calendar-day__btn__item-hour-field" data="rezine">2:30</textarea>
+											<input type="text" name="calendar-day__btn__item-hour-field" value="2:30">
 											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
@@ -368,7 +378,7 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<textarea class="calendar-day__btn__item-hour-field" data="rezine">1:50</textarea>
+											<input type="text" name="calendar-day__btn__item-hour-field" value="1:50">
 											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
@@ -395,7 +405,7 @@ Report</a></li>
 										</div>
 										<div class="calendar-day__btn"></div>
 										<div class="calendar-day__btn__item-hour">
-											<textarea class="calendar-day__btn__item-hour-field" data="rezine">2:40</textarea>
+											<input type="text" name="calendar-day__btn__item-hour-field" value="2:40">
 											<div class="text_area_div"></div>
 										</div>
 										<button class="calendar-day__close"></button>
