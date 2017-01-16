@@ -1311,7 +1311,7 @@ tr .table-last{
     overflow: hidden;
 }
 #sidebar{
-    width: 21.2%;
+    width: 19.2%;
     min-height: 100%;
     background: #12253b;
     flex-shrink: 0;
@@ -1323,7 +1323,7 @@ tr .table-last{
     margin: auto;
 }
 #main-content{
-    width: 78.8%;
+    width: 80.8%;
     flex-grow: 1;
     background: #1c3d65;
 }
