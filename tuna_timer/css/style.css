@@ -2088,4 +2088,55 @@ input[name="calendar-day__btn__item-hour-field"]{
     .calendar-day__btn__item-hour-field{
         font-size: 14px;
     }
+    .month-table__col{
+        border-bottom: 1px solid #416a9c;
+    }
+    .month-table__col div{
+        position: relative;
+        min-height: 78px;
+    }
+    .month-table__col h5{
+        padding: 4px 0 0 10px;
+        font-size: 12px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #7fa7d9;
+    }
+    .month-table__btn{
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        right: 0;
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: 20px;
+        background: #416a9c;
+        font-size: 12px;
+        font-style: italic;
+        color: #fff;
+        text-align: right;
+    }
+    .month-table__btn_orange,
+    .month-table__btn_gray,
+    .month-table__btn_green{
+        margin-top: 4px;
+        margin-right: 3px;
+        float: left;
+        width: 4px;
+        height: 9px;
+        display: inline-block;
+    }
+    .month-table__btn_orange{
+        background: #ffba3a;
+    }
+    .month-table__btn_gray{
+        background: #9b9b9b;
+    }
+    .month-table__btn_green{
+        background: #7ed321;
+    }
+    .month-table__item_new h5{
+        color: #3e5878;
+    }
 }

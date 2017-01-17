@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>status edit</title>
+</head>
+<body>
+	<div id="wrapper">
+		<aside id="sidebar">
+			<div class="sidebar-header">
+				<div class="header__user">
+					<form>
+						<select>
+							<option>TunaTimerDevelop</option>
+							<option>@ Sergey_Sokolenko</option>
+							<option>@ Artem_Zhuravlev</option>
+							<option>@ Ivan_Ivanov</option>
+						</select>
+					</form>
+				</div>
+				<div class="sidebar-total">
+					<h3 class="sidebar-total__title">Your total for today is </h3>
+					<h4 class="sidebar-total__hour">8:20 <span>h</span></h4>
+					<button class="sidebar__task_btn">ADD TASK</button>
+				</div>
+			</div>
+			
+			<ul class="sidebar-tabs">
+				<li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>Status</a></li>
+				<li class="sidebar-tabs__active"><a href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Report</a></li>
+			</ul>
+			<div class="sidebar-chanells">
+				<h3 class="sidebar-chanells__title"><i class="fa fa-code-fork" aria-hidden="true"></i> Chanel</h3>
+				<div class="sidebar-chanells__nav">
+					<form action="">
+						<div class="sidebar-chanells__nav-col">
+							<label for="ui_ux" class="ui_ux">#ui_ux</label>
+							<input type="checkbox"  class="checkbox" id="ui_ux">
+						</div>
+						<div class="sidebar-chanells__nav-col">
+							<label for="useful-links" class="useful-links">#useful-links</label>
+							<input type="checkbox"  class="checkbox" id="useful-links">
+						</div>
+						<div class="sidebar-chanells__nav-col">
+							<label for="tuna-timer" class="tuna-timer">#tuna-timer</label>
+							<input type="checkbox"  class="checkbox" id="tuna-timer">
+						</div>
+						<div class="sidebar-chanells__nav-col">
+							<label for="tuna-timer_dev" class="tuna-timer_dev">#tuna-timer_dev</label>
+							<input type="checkbox"  class="checkbox" id="tuna-timer_dev">
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<button class="sidebar-chanells-btn">+ Add new chanel</button>
+			<div class="sidebar-color">
+				<div class="sidebar-color__nav">
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+			<h3 class="footer-title">(c) CleverUA</h3>
+		</aside>
+		<div id="main-content">
+			<!-- <header class="header header-calendar">
+				<div class="header_container header_container-desctop">
+					<div class="header__col header__col-right header__col-day">
+						<div class="header__user">
+							<form>
+								<select>
+									<option>@ Sergey_Sokolenko</option>
+									<option>@ Artem_Zhuravlev</option>
+									<option>@ Ivan_Ivanov</option>
+								</select>
+							</form>
+						</div>
+					</div>
+				</div>
+			</header> -->
+			<main class="main main-calendar ">
+				<div class="fluid-container">
+					<div class="calendar-week">
+						<div class="calendar-week__top">
+							<ul>
+								<li class="calendar-week__year">
+									<a href="#"> 2015</a>
+								</li>
+								<li><a href="#">Jan</a></li>
+								<li><a href="#">Feb</a></li>
+								<li><a href="#">Mar</a></li>
+								<li><a href="#">Apr</a></li>
+								<li><a href="#">May</a></li>
+								<li class="calendar-week--active"><a href="#">Jun</a></li>
+								<li><a href="#">Jul</a></li>
+								<li><a href="#">Aug</a></li>
+								<li><a href="#">Sep</a></li>
+								<li><a href="#">Oct</a></li>
+								<li class="calendar-week__future"><a href="#">Nov</a></li>
+								<li class="calendar-week__future"><a href="#">Dec</a></li>
+							</ul>
+						</div>
+						<div class="calendar-week__calendar">
+							<h1 class="calendar-week__calendar-title">October 15 - 21</h1>
+							<nav class="calendar-week__calendar-nav">
+								<ul>
+									<li><a href="day.html">Day</a></li>
+									<li><a href="week.html">Week</a></li>
+								</ul>
+							</nav>
+							<div class="calendar-week__calendar-holder">
+								<div class="calendar-week__calendar-week">
+									<ul>
+										<li>Mo<button class="calendar-week__calendar-btn">1</button></li>
+										<li>Tu<button class="calendar-week__calendar-btn">2</button></li>
+										<li>We<button class="calendar-week__calendar-btn">3</button></li>
+										<li>Th<button class="calendar-week__calendar-btn">4</button></li>
+										<li>Fr<button class="calendar-week__calendar-btn">5</button></li>
+										<li>Sa<button class="calendar-week__calendar-btn">6</button></li>
+										<li>Su<button class="calendar-week__calendar-btn">7</button></li>
+									</ul>
+								</div>
+								<div class="calendar-week__calendar-week">
+									<ul>
+										<li>Mo<button class="calendar-week__calendar-btn">8</button></li>
+										<li>Tu<button class="calendar-week__calendar-btn">9</button></li>
+										<li>We<button class="calendar-week__calendar-btn">10</button></li>
+										<li>Th<button class="calendar-week__calendar-btn">11</button></li>
+										<li>Fr<button class="calendar-week__calendar-btn">12</button></li>
+										<li>Sa<button class="calendar-week__calendar-btn">13</button></li>
+										<li>Su<button class="calendar-week__calendar-btn">14</button></li>
+									</ul>
+								</div>
+								<div class="calendar-week__calendar-week">
+									<ul>
+										<li>Mo<button class="calendar-week__calendar-btn">15</button></li>
+										<li>Tu<button class="calendar-week__calendar-btn">16</button></li>
+										<li>We<button class="calendar-week__calendar-btn">17</button></li>
+										<li>Th<button class="calendar-week__calendar-btn">18</button></li>
+										<li>Fr<button class="calendar-week__calendar-btn">19</button></li>
+										<li>Sa<button class="calendar-week__calendar-btn">20</button></li>
+										<li>Su<button class="calendar-week__calendar-btn">21</button></li>
+									</ul>
+								</div>
+								<div class="calendar-week__calendar-week">
+									<ul>
+										<li>Mo<button class="calendar-week__calendar-btn">22</button></li>
+										<li>Tu<button class="calendar-week__calendar-btn">23</button></li>
+										<li>We<button class="calendar-week__calendar-btn">24</button></li>
+										<li>Th<button class="calendar-week__calendar-btn calendar-week__calendar-btn--active">25</button></li>
+										<li>Fr<button class="calendar-week__calendar-btn">26</button></li>
+										<li>Sa<button class="calendar-week__calendar-btn">27</button></li>
+										<li>Su<button class="calendar-week__calendar-btn">28</button></li>
+									</ul>
+								</div>
+								<div class="calendar-week__calendar-week calendar-week__calendar-week-last">
+									<ul>
+										<li>Mo<button class="calendar-week__calendar-btn">29</button></li>
+										<li>Tu<button class="calendar-week__calendar-btn">30</button></li>
+										<li>We<button class="calendar-week__calendar-btn">31</button></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<table class="ccalendar__week-table month-table">
+							<tr class="ccalendar__week-table-days">
+								<td>Monday</td>
+								<td>Tuesday</td>
+								<td>Wednesday</td>
+								<td>Thursday</td>
+								<td>Friday</td>
+								<td>Saturday</td>
+								<td>Sunday</td>	
+							</tr>
+							<tr class="month-table__col">
+								<td>
+									<div>
+										<h5>1</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_orange"></span>
+											<span class="month-table__btn_gray"></span>
+											3:50
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>2</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											5:10
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>3</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_orange"></span>
+											8:00
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>4</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											8:00
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>5</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											7:13
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>6</h5>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>7</h5>
+									</div>
+								</td>
+							</tr>
+							<tr class="month-table__col">
+								<td>
+									<div>
+										<h5>8</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_orange"></span>
+											<span class="month-table__btn_gray"></span>
+											3:50
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>9</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											5:10
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>10</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_orange"></span>
+											8:00
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>11</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											8:00
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>12</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											7:13
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>13</h5>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>14</h5>
+									</div>
+								</td>
+							</tr>
+							<tr class="month-table__col">
+								<td>
+									<div>
+										<h5>15</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											3:50
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>16</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_orange"></span>
+											5:10
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>17</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_gray"></span>
+											8:00
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>18</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_orange"></span>
+											8:00
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>19</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											7:13
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>20</h5>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>21</h5>
+									</div>
+								</td>
+							</tr>
+							<tr class="month-table__col">
+								<td>
+									<div>
+										<h5>22</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_gray"></span>
+											3:50
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>23</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											5:10
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>24</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_orange"></span>
+											8:00
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>25</h5>
+										<button class="month-table__btn">
+											<span class="month-table__btn_green"></span>
+											8:00
+										</button>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>26</h5>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>27</h5>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>28</h5>
+									</div>
+								</td>
+							</tr>
+							<tr class="month-table__col">
+								<td>
+									<div>
+										<h5>29</h5>
+									</div>
+								</td>
+								<td>
+									<div>
+										<h5>30</h5>
+									</div>
+								</td>
+								<td class="month-table__item_new">
+									<div>
+										<h5>1</h5>
+									</div>
+								</td>
+								<td class="month-table__item_new">
+									<div>
+										<h5>2</h5>
+									</div>
+								</td>
+								<td class="month-table__item_new">
+									<div>
+										<h5>3</h5>
+									</div>
+								</td>
+								<td class="month-table__item_new">
+									<div>
+										<h5>4</h5>
+									</div>
+								</td>
+								<td class="month-table__item_new">
+									<div>
+										<h5>5</h5>
+									</div>
+								</td>
+							</tr>
+							<tr class="calendar-week__sector-total-col">
+								<td colspan="3" class="calendar-week__sector-total">
+									<div class="calendar-day__total-col">
+										<ul class="calendar-day__total-nav">
+											<li><a href="#">Print report</a></li>
+											<li><a href="#">Export report</a></li>
+										</ul>
+									</div>
+								</td>
+								<td colspan="4" class="calendar-week__sector-total">
+									<h2>Weekly hours Total: 32:13 h</h2>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+      				<div class="myModal__date">
+      					<h4><i class="fa fa-code-fork" aria-hidden="true"></i> android_demo_release</h4>
+      				</div>
+      					
+        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+        		</div>
+		      	<div class="modal-body">
+		        	<div class="myModal__holder">
+		        		<div class="myModal__describe">
+		        			<h5>Deciders table: county/city logo must be changes after pressing GO button</h5>
+		        		</div>
+		        		<div class="myModal__result">
+		        			<h5>Total: 1:00 h</h5>
+		        		</div>
+		        	</div>
+		        	<div class="myModal__holder">
+		        		<div class="myModal__describe">
+		        			<h5>Deciders table: county/city logo must be changes after pressing GO button</h5>
+		        		</div>
+		        		<div class="myModal__result">
+		        			<h5>Total: 1:00 h</h5>
+		        		</div>
+		        	</div>
+		      	</div>
+    		</div>
+  		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/rezine.js"></script>
+	<script>
+		(function($) {
+			$(function() {
+  				$('input, select').styler();
+			});
+		})(jQuery);
+		$(function(){
+            $('.calendar-day__btn--active').click(function(){
+                $('.calendar-day__btn--active').toggleClass('calendar-day__btn-pause');
+            });
+        });
+	</script>
+</body>
+</html>
