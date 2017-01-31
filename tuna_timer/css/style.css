@@ -73,6 +73,12 @@ textarea{
     background: #416a9c;
     opacity: .8;
 }
+.jq-selectbox li:before{
+    content: "#";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 .jq-selectbox li:hover{
     background: #416a9c;
     opacity: .8;
@@ -1078,7 +1084,6 @@ tr .table-last{
     display: inline-block;
     transition: .3s;
     background: #1c3f68;
-    flex-grow: 1;
 }
 .calendar-week__top ul li a{
     display: block;
@@ -1158,9 +1163,14 @@ tr .table-last{
 .calendar-week__calendar-week ul li:hover{
     color: #fff !important;
 }
-
+.calendar-week__calendar-week ul li:focus{
+    color: #fff !important;
+}
 .calendar-week__active-week:hover li{
     color: #fff;
+}
+.calendar-week__calendar-week:focus ul li{
+    color: #fff !important;
 }
 .calendar-week__calendar-week ul{
     display: flex;
@@ -1186,6 +1196,12 @@ tr .table-last{
     transition: .1s;
 }
 .calendar-week__calendar-btn:hover{
+    text-align: center;
+    background: #1c3f68;
+    color: #fff;
+    border-radius: 4px;
+}
+.calendar-week__calendar-btn:focus{
     text-align: center;
     background: #1c3f68;
     color: #fff;
@@ -2102,11 +2118,6 @@ td .current-day{
         height: 28px;
     }
 }
-@media(max-width: 1780px){
-    .calendar-week__calendar-week ul li{
-        /*padding: 0 4px;*/
-    }
-}
 @media(max-width: 1709px){
     .calendar-week__calendar-week ul li{
         font-size: 15px;
@@ -2182,11 +2193,6 @@ td .current-day{
         height: 30px;
     }
 }
-@media(max-width: 1536px){
-    /*.calendar-week__calendar-week ul li{
-        padding: 0 1px;
-    }*/
-}
 @media(max-width: 1499px){
     .sidebar-total{
         padding-top: 34px;
@@ -2239,7 +2245,8 @@ td .current-day{
     .calendar-week__calendar-nav ul li a{
         font-size: 14px;
     }
-    .calendar-week__top ul li a{
+    .calendar-week__top ul li a,
+    .calendar-week__top .calendar-week__future a{
         font-size: 16px;
     }
     .calendar-day__holder-tasks h5{
@@ -2254,6 +2261,12 @@ td .current-day{
     }
     .calendar-day__item-select .jq-selectbox__select-text{
         font-size: 14px;
+    }
+    .calendar-day__item-select .jq-selectbox__select-text:before{
+        content: "#";
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
     }
     .calendar-week__top .calendar-week__year a{
         font-size: 12px;
@@ -2287,9 +2300,9 @@ td .current-day{
         font-size: 12px;
         height: 20px;
     }
-    .calendar-week__top .calendar-week__future a{
+    /*.calendar-week__top .calendar-week__future a{
         font-size: 14px;
-    }
+    }*/
     .orange-border,
     .gray-border,
     .green-border{
